@@ -31001,23 +31001,23 @@ function DressCode() {
               className: "grid md:grid-cols-2 gap-8 mb-8",
               children: [p.jsxs("div", {
                   className: "text-center",
-                  children: [p.jsx("img", {
-                      src: "/assets/vestimenta/dress-negro.webp",
-                      alt: "Vestido formal para mujeres",
-                      className: "w-full max-w-[200px] mx-auto mb-4 object-contain"
-                  }), p.jsx("p", {
-                      className: "font-body text-foreground font-medium",
+                  children: [p.jsx("p", {
+                      className: "font-body text-foreground font-medium mb-4",
                       children: "MUJERES"
+                  }), p.jsx("img", {
+                      src: "/assets/vestimenta/dress-negro.svg",
+                      alt: "Vestido formal para mujeres",
+                      className: "w-full max-w-[200px] mx-auto object-contain"
                   })]
               }), p.jsxs("div", {
                   className: "text-center",
-                  children: [p.jsx("img", {
+                  children: [p.jsx("p", {
+                      className: "font-body text-foreground font-medium mb-4",
+                      children: "HOMBRES"
+                  }), p.jsx("img", {
                       src: "/assets/vestimenta/suit-gris.webp",
                       alt: "Traje formal para hombres",
-                      className: "w-full max-w-[200px] mx-auto mb-4 object-contain"
-                  }), p.jsx("p", {
-                      className: "font-body text-foreground font-medium",
-                      children: "HOMBRES"
+                      className: "w-full max-w-[200px] mx-auto object-contain"
                   })]
               })]
           }), p.jsx(Y.div, {
@@ -32131,6 +32131,15 @@ function nU({
                       children: [p.jsx(AA, {
                           className: "w-5 h-5"
                       }), "Añadir al calendario"]
+                  }), p.jsxs(Nn, {
+                      onClick: () => {
+                          window.open("https://docs.google.com/forms/d/e/1FAIpQLSedoURRmCDKR5K3rz0iTJLELHm4aHntcFf_UeT_lle1-CdfRg/viewform", "_blank", "noopener,noreferrer")
+                      },
+                      variant: "default",
+                      className: "gap-2 bg-primary hover:bg-primary/90 text-primary-foreground transition-colors",
+                      children: [p.jsx(KA, {
+                          className: "w-5 h-5"
+                      }), "Confirmar asistencia"]
                   }), p.jsx("p", {
                       className: "text-muted-foreground font-body text-sm max-w-md text-center leading-relaxed",
                       children: "Si por cualquier motivo no puedes asistir, te agradeceríamos mucho que nos avisaras con antelación. Puedes contactarnos por WhatsApp."
@@ -32195,55 +32204,17 @@ const Ew = [{
 }];
 
 function rU() {
-  const [e, t] = g.useState(!1), [n, r] = g.useState([]), [s, i] = g.useState(""), [o, a] = g.useState([]), [l, c] = g.useState("1"), [u, d] = g.useState({
-      full_name: "",
-      email: "",
-      attendance: "yes",
-      guest_count: 1,
-      dietary_requirements: "",
-      message: ""
-  }), h = Z5(), {
+  const [e, t] = g.useState(!1), [u, d] = g.useState({
+      attendance: "yes"
+  }), {
       toast: f
-  } = Ru(), x = S => {
-      r(_ => _.includes(S) ? _.filter(E => E !== S) : [..._, S])
-  }, m = S => {
-      const _ = Math.max(1, Math.min(10, S));
-      d(T => ({
-          ...T,
-          guest_count: _
-      }));
-      const E = Math.max(0, _ - 1);
-      a(T => E > T.length ? [...T, ...Array(E - T.length).fill("")] : T.slice(0, E))
-  }, b = S => {
-      if (c(S), !S) return;
-      const _ = parseInt(S, 10);
-      Number.isNaN(_) || m(_)
-  }, v = () => {
-      if (!l.trim()) {
-          c("1"), m(1);
-          return
-      }
-      const S = parseInt(l, 10),
-          _ = Number.isNaN(S) ? 1 : Math.max(1, Math.min(10, S));
-      c(String(_)), m(_)
-  }, y = (S, _) => {
-      a(E => {
-          const T = [...E];
-          return T[S] = _, T
-      })
-  }, w = async S => {
-      if (S.preventDefault()) {}
-      try {
-          await h.mutateAsync({
-              ...u,
-              message: u.message || void 0
-          }), t(!0)
-      } catch {
-          f({
-              title: "Error",
-              description: "No se pudo enviar tu confirmación. Inténtalo de nuevo.",
-              variant: "destructive"
-          })
+  } = Ru();
+  const w = S => {
+      S.preventDefault();
+      if (u.attendance === "yes") {
+          t(!0)
+      } else {
+          t(!0)
       }
   };
   return e ? p.jsx(nU, {
@@ -32296,38 +32267,6 @@ function rU() {
               className: "bg-card/90 backdrop-blur-sm border border-border rounded-sm p-8 space-y-6 shadow-soft",
               children: [p.jsxs("div", {
                   children: [p.jsx(ht, {
-                      htmlFor: "name",
-                      className: "text-foreground font-medium",
-                      children: "Nombre completo *"
-                  }), p.jsx(Er, {
-                      id: "name",
-                      required: !0,
-                      value: u.full_name,
-                      onChange: S => d({
-                          ...u,
-                          full_name: S.target.value
-                      }),
-                      className: "mt-2 bg-background border-border text-foreground placeholder:text-muted-foreground focus:border-primary",
-                      placeholder: "Tu nombre"
-                  })]
-              }), p.jsxs("div", {
-                  children: [p.jsx(ht, {
-                      htmlFor: "email",
-                      className: "text-foreground font-medium",
-                      children: "Email (opcional)"
-                  }), p.jsx(Er, {
-                      id: "email",
-                      type: "email",
-                      value: u.email,
-                      onChange: S => d({
-                          ...u,
-                          email: S.target.value
-                      }),
-                      className: "mt-2 bg-background border-border text-foreground placeholder:text-muted-foreground focus:border-primary",
-                      placeholder: "tu@email.com"
-                  })]
-              }), p.jsxs("div", {
-                  children: [p.jsx(ht, {
                       className: "text-foreground font-medium",
                       children: "¿Asistirás? *"
                   }), p.jsxs(LC, {
@@ -32361,31 +32300,10 @@ function rU() {
                           })]
                       })]
                   })]
-              }), p.jsxs("div", {
-                  children: [p.jsx(ht, {
-                      htmlFor: "message",
-                      className: "text-foreground font-medium",
-                      children: "Mensaje para los novios (opcional)"
-                  }), p.jsx(fC, {
-                      id: "message",
-                      value: u.message,
-                      onChange: S => d({
-                          ...u,
-                          message: S.target.value
-                      }),
-                      className: "mt-2 bg-background border-border text-foreground placeholder:text-muted-foreground focus:border-primary",
-                      placeholder: "Escríbenos unas palabras...",
-                      rows: 3
-                  })]
               }), p.jsx(Nn, {
                   type: "submit",
                   className: "w-full gap-2 bg-primary hover:bg-primary/90 text-primary-foreground font-medium",
-                  disabled: h.isPending,
-                  children: h.isPending ? "Enviando..." : p.jsxs(p.Fragment, {
-                      children: [p.jsx(KA, {
-                          className: "w-4 h-4"
-                      }), "Enviar confirmación"]
-                  })
+                  children: "Continuar"
               })]
           })]
       })
