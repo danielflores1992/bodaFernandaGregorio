@@ -32513,47 +32513,47 @@ const cU = "/assets/elena_y_david-BF61jgoc.mp3",
               children: [p.jsx("img", {
                   src: Zt,
                   alt: "",
-                  className: "absolute right-0 top-[2%] h-[280px] md:h-[450px] w-auto object-contain object-right opacity-100 pointer-events-none z-10"
+                  className: "absolute right-0 top-[2%] h-[280px] md:h-[450px] w-auto object-contain object-right opacity-70 pointer-events-none z-10"
               }), p.jsx("img", {
                   src: Zt,
                   alt: "",
-                  className: "absolute right-0 top-[18%] h-[350px] md:h-[550px] w-auto object-contain object-right opacity-100 pointer-events-none z-10"
+                  className: "absolute right-0 top-[18%] h-[350px] md:h-[550px] w-auto object-contain object-right opacity-70 pointer-events-none z-10"
               }), p.jsx("img", {
                   src: Zt,
                   alt: "",
-                  className: "absolute right-0 top-[38%] h-[260px] md:h-[420px] w-auto object-contain object-right opacity-100 pointer-events-none z-10"
+                  className: "absolute right-0 top-[38%] h-[260px] md:h-[420px] w-auto object-contain object-right opacity-70 pointer-events-none z-10"
               }), p.jsx("img", {
                   src: Zt,
                   alt: "",
-                  className: "absolute right-0 top-[55%] h-[320px] md:h-[500px] w-auto object-contain object-right opacity-100 pointer-events-none z-10"
+                  className: "absolute right-0 top-[55%] h-[320px] md:h-[500px] w-auto object-contain object-right opacity-70 pointer-events-none z-10"
               }), p.jsx("img", {
                   src: Zt,
                   alt: "",
-                  className: "absolute right-0 top-[75%] h-[280px] md:h-[450px] w-auto object-contain object-right opacity-100 pointer-events-none z-10"
+                  className: "absolute right-0 top-[75%] h-[280px] md:h-[450px] w-auto object-contain object-right opacity-70 pointer-events-none z-10"
               }), p.jsx("img", {
                   src: Zt,
                   alt: "",
-                  className: "absolute right-0 top-[90%] h-[350px] md:h-[550px] w-auto object-contain object-right opacity-100 pointer-events-none z-10"
+                  className: "absolute right-0 top-[90%] h-[350px] md:h-[550px] w-auto object-contain object-right opacity-70 pointer-events-none z-10"
               }), p.jsx("img", {
                   src: Zt,
                   alt: "",
-                  className: "absolute left-0 top-[8%] h-[320px] md:h-[480px] w-auto object-contain object-left opacity-100 pointer-events-none z-10 scale-x-[-1]"
+                  className: "absolute left-0 top-[8%] h-[320px] md:h-[480px] w-auto object-contain object-left opacity-70 pointer-events-none z-10 scale-x-[-1]"
               }), p.jsx("img", {
                   src: Zt,
                   alt: "",
-                  className: "absolute left-0 top-[28%] h-[270px] md:h-[420px] w-auto object-contain object-left opacity-100 pointer-events-none z-10 scale-x-[-1]"
+                  className: "absolute left-0 top-[28%] h-[270px] md:h-[420px] w-auto object-contain object-left opacity-70 pointer-events-none z-10 scale-x-[-1]"
               }), p.jsx("img", {
                   src: Zt,
                   alt: "",
-                  className: "absolute left-0 top-[45%] h-[340px] md:h-[520px] w-auto object-contain object-left opacity-100 pointer-events-none z-10 scale-x-[-1]"
+                  className: "absolute left-0 top-[45%] h-[340px] md:h-[520px] w-auto object-contain object-left opacity-70 pointer-events-none z-10 scale-x-[-1]"
               }), p.jsx("img", {
                   src: Zt,
                   alt: "",
-                  className: "absolute left-0 top-[65%] h-[300px] md:h-[460px] w-auto object-contain object-left opacity-100 pointer-events-none z-10 scale-x-[-1]"
+                  className: "absolute left-0 top-[65%] h-[300px] md:h-[460px] w-auto object-contain object-left opacity-70 pointer-events-none z-10 scale-x-[-1]"
               }), p.jsx("img", {
                   src: Zt,
                   alt: "",
-                  className: "absolute left-0 top-[82%] h-[260px] md:h-[400px] w-auto object-contain object-left opacity-100 pointer-events-none z-10 scale-x-[-1]"
+                  className: "absolute left-0 top-[82%] h-[260px] md:h-[400px] w-auto object-contain object-left opacity-70 pointer-events-none z-10 scale-x-[-1]"
               }), p.jsx(hF, {
                   name1: c.couple_name_1,
                   name2: c.couple_name_2,
