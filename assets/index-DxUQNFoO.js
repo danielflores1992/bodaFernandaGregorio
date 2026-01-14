@@ -31001,7 +31001,40 @@ function DressCode() {
               className: "grid md:grid-cols-2 gap-8 mb-8",
               children: [p.jsxs("div", {
                   className: "text-center",
-                  children: [p.jsx("p", {
+                  children: [p.jsx(Y.div, {
+                      initial: {
+                          opacity: 0,
+                          y: 20
+                      },
+                      whileInView: {
+                          opacity: 1,
+                          y: 0
+                      },
+                      viewport: {
+                          once: !0
+                      },
+                      transition: {
+                          duration: .6,
+                          delay: .3
+                      },
+                      className: "mb-6",
+                      children: p.jsxs("div", {
+                          className: "text-center",
+                          children: [p.jsx("p", {
+                              className: "font-body text-muted-foreground mb-4",
+                              children: "COLORES DE PREFERENCIA"
+                          }), p.jsx("div", {
+                              className: "grid grid-cols-4 gap-4 max-w-md mx-auto",
+                              children: colors.map((e, t) => p.jsx("div", {
+                                  key: t,
+                                  className: "aspect-square rounded-full shadow-soft",
+                                  style: {
+                                      backgroundColor: e
+                                  }
+                              }, t))
+                          })]
+                      })
+                  }), p.jsx("p", {
                       className: "font-body text-foreground font-medium mb-4",
                       children: "MUJERES"
                   }), p.jsx("img", {
@@ -31015,44 +31048,11 @@ function DressCode() {
                       className: "font-body text-foreground font-medium mb-4",
                       children: "HOMBRES"
                   }), p.jsx("img", {
-                      src: "/assets/vestimenta/suit-gris.webp",
+                      src: "/assets/vestimenta/suit-gris.svg",
                       alt: "Traje formal para hombres",
                       className: "w-full max-w-[200px] mx-auto object-contain"
                   })]
               })]
-          }), p.jsx(Y.div, {
-              initial: {
-                  opacity: 0,
-                  y: 20
-              },
-              whileInView: {
-                  opacity: 1,
-                  y: 0
-              },
-              viewport: {
-                  once: !0
-              },
-              transition: {
-                  duration: .6,
-                  delay: .4
-              },
-              className: "mt-8",
-              children: p.jsxs("div", {
-                  className: "text-center",
-                  children: [p.jsx("p", {
-                      className: "font-body text-muted-foreground mb-4",
-                      children: "COLORES DE PREFERENCIA"
-                  }), p.jsx("div", {
-                      className: "grid grid-cols-4 gap-4 max-w-md mx-auto",
-                      children: colors.map((e, t) => p.jsx("div", {
-                          key: t,
-                          className: "aspect-square rounded-full shadow-soft",
-                          style: {
-                              backgroundColor: e
-                          }
-                      }, t))
-                  })]
-              })
           })]
       })
   })
@@ -32513,47 +32513,47 @@ const cU = "/assets/elena_y_david-BF61jgoc.mp3",
               children: [p.jsx("img", {
                   src: Zt,
                   alt: "",
-                  className: "absolute right-0 top-[2%] h-[280px] md:h-[450px] w-auto object-contain object-right opacity-50 pointer-events-none z-10"
+                  className: "absolute right-0 top-[2%] h-[280px] md:h-[450px] w-auto object-contain object-right opacity-100 pointer-events-none z-10"
               }), p.jsx("img", {
                   src: Zt,
                   alt: "",
-                  className: "absolute right-0 top-[18%] h-[350px] md:h-[550px] w-auto object-contain object-right opacity-40 pointer-events-none z-10"
+                  className: "absolute right-0 top-[18%] h-[350px] md:h-[550px] w-auto object-contain object-right opacity-100 pointer-events-none z-10"
               }), p.jsx("img", {
                   src: Zt,
                   alt: "",
-                  className: "absolute right-0 top-[38%] h-[260px] md:h-[420px] w-auto object-contain object-right opacity-45 pointer-events-none z-10"
+                  className: "absolute right-0 top-[38%] h-[260px] md:h-[420px] w-auto object-contain object-right opacity-100 pointer-events-none z-10"
               }), p.jsx("img", {
                   src: Zt,
                   alt: "",
-                  className: "absolute right-0 top-[55%] h-[320px] md:h-[500px] w-auto object-contain object-right opacity-35 pointer-events-none z-10"
+                  className: "absolute right-0 top-[55%] h-[320px] md:h-[500px] w-auto object-contain object-right opacity-100 pointer-events-none z-10"
               }), p.jsx("img", {
                   src: Zt,
                   alt: "",
-                  className: "absolute right-0 top-[75%] h-[280px] md:h-[450px] w-auto object-contain object-right opacity-50 pointer-events-none z-10"
+                  className: "absolute right-0 top-[75%] h-[280px] md:h-[450px] w-auto object-contain object-right opacity-100 pointer-events-none z-10"
               }), p.jsx("img", {
                   src: Zt,
                   alt: "",
-                  className: "absolute right-0 top-[90%] h-[350px] md:h-[550px] w-auto object-contain object-right opacity-40 pointer-events-none z-10"
+                  className: "absolute right-0 top-[90%] h-[350px] md:h-[550px] w-auto object-contain object-right opacity-100 pointer-events-none z-10"
               }), p.jsx("img", {
                   src: Zt,
                   alt: "",
-                  className: "absolute left-0 top-[8%] h-[320px] md:h-[480px] w-auto object-contain object-left opacity-45 pointer-events-none z-10 scale-x-[-1]"
+                  className: "absolute left-0 top-[8%] h-[320px] md:h-[480px] w-auto object-contain object-left opacity-100 pointer-events-none z-10 scale-x-[-1]"
               }), p.jsx("img", {
                   src: Zt,
                   alt: "",
-                  className: "absolute left-0 top-[28%] h-[270px] md:h-[420px] w-auto object-contain object-left opacity-50 pointer-events-none z-10 scale-x-[-1]"
+                  className: "absolute left-0 top-[28%] h-[270px] md:h-[420px] w-auto object-contain object-left opacity-100 pointer-events-none z-10 scale-x-[-1]"
               }), p.jsx("img", {
                   src: Zt,
                   alt: "",
-                  className: "absolute left-0 top-[45%] h-[340px] md:h-[520px] w-auto object-contain object-left opacity-40 pointer-events-none z-10 scale-x-[-1]"
+                  className: "absolute left-0 top-[45%] h-[340px] md:h-[520px] w-auto object-contain object-left opacity-100 pointer-events-none z-10 scale-x-[-1]"
               }), p.jsx("img", {
                   src: Zt,
                   alt: "",
-                  className: "absolute left-0 top-[65%] h-[300px] md:h-[460px] w-auto object-contain object-left opacity-45 pointer-events-none z-10 scale-x-[-1]"
+                  className: "absolute left-0 top-[65%] h-[300px] md:h-[460px] w-auto object-contain object-left opacity-100 pointer-events-none z-10 scale-x-[-1]"
               }), p.jsx("img", {
                   src: Zt,
                   alt: "",
-                  className: "absolute left-0 top-[82%] h-[260px] md:h-[400px] w-auto object-contain object-left opacity-50 pointer-events-none z-10 scale-x-[-1]"
+                  className: "absolute left-0 top-[82%] h-[260px] md:h-[400px] w-auto object-contain object-left opacity-100 pointer-events-none z-10 scale-x-[-1]"
               }), p.jsx(hF, {
                   name1: c.couple_name_1,
                   name2: c.couple_name_2,
