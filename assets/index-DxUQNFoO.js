@@ -31061,7 +31061,7 @@ function DressCode() {
                       className: "font-body text-foreground font-medium mb-4",
                       children: "MUJERES"
                   }), p.jsx("img", {
-                      src: "/assets/vestimenta/dress-negro.svg",
+                      src: "/assets/vestimenta/dress-negro.png",
                       alt: "Vestido formal para mujeres",
                       className: "w-full max-w-[200px] mx-auto object-contain"
                   })]
@@ -31071,7 +31071,7 @@ function DressCode() {
                       className: "font-body text-foreground font-medium mb-4",
                       children: "HOMBRES"
                   }), p.jsx("img", {
-                      src: "/assets/vestimenta/suit-gris.svg",
+                      src: "/assets/vestimenta/suit-gris.png",
                       alt: "Traje formal para hombres",
                       className: "w-full max-w-[200px] mx-auto object-contain"
                   })]
