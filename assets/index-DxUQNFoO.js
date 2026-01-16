@@ -21956,17 +21956,7 @@ function hF({
       };
   return p.jsxs("section", {
       className: "relative min-h-screen overflow-hidden bg-background",
-      children: [p.jsx("video", {
-          src: dF,
-          className: "absolute inset-0 w-full h-full object-cover",
-          style: {
-              objectPosition: "center center"
-          },
-          autoPlay: !0,
-          loop: !0,
-          muted: !0,
-          playsInline: !0
-      }), p.jsxs("div", {
+      children: [p.jsxs("div", {
           className: "relative z-20 min-h-screen flex flex-col items-center justify-center",
           children: [p.jsxs(Y.div, {
               initial: {
@@ -30900,36 +30890,69 @@ function _5({
                           children: [p.jsxs("p", {
                               className: "text-muted-foreground font-body text-sm leading-relaxed mb-6",
                               children: ["Su presencia es nuestro mejor regalo, pero si deseas contribuir a nuestro futuro, agradecemos un aporte para nuestro hogar"]
-                          }), p.jsx("div", {
-                              className: "text-center",
-                              children: s ? p.jsxs(Y.div, {
-                                  initial: {
-                                      opacity: 0,
-                                      y: 5
-                                  },
-                                  animate: {
-                                      opacity: 1,
-                                      y: 0
-                                  },
-                                  transition: {
-                                      duration: .3
-                                  },
-                                  className: "space-y-2",
+                          }), p.jsxs("div", {
+                              className: "space-y-6",
+                              children: [p.jsxs("div", {
+                                  className: "space-y-3",
                                   children: [p.jsx("p", {
-                                      className: "text-xs text-muted-foreground font-body uppercase tracking-wider",
-                                      children: "Link a Mesa Liverpool"
-                                  }), p.jsx("a", {
-                                      href: t,
-                                      target: "_blank",
-                                      rel: "noopener noreferrer",
-                                      className: "font-mono text-sm text-foreground/80 tracking-wide select-all hover:text-foreground underline underline-offset-2 transition-colors",
-                                      children: t
+                                      className: "text-xs text-muted-foreground font-body uppercase tracking-wider mb-2",
+                                      children: "Transferencia bancaria"
+                                  }), p.jsxs("div", {
+                                      className: "space-y-3 text-left",
+                                      children: [p.jsxs("div", {
+                                          className: "bg-background/50 p-4 rounded-lg border border-border",
+                                          children: [p.jsx("p", {
+                                              className: "font-body text-sm font-medium text-foreground mb-2",
+                                              children: "Banco: NU"
+                                          }), p.jsx("p", {
+                                              className: "font-mono text-xs text-foreground/80 mb-1",
+                                              children: "CLABE: 638180010133564070"
+                                          }), p.jsx("p", {
+                                              className: "font-body text-xs text-muted-foreground",
+                                              children: "MARÍA FERNANDA ARAGÓN GARCÍA"
+                                          })]
+                                      }), p.jsxs("div", {
+                                          className: "bg-background/50 p-4 rounded-lg border border-border",
+                                          children: [p.jsx("p", {
+                                              className: "font-body text-sm font-medium text-foreground mb-2",
+                                              children: "Banco: Banamex"
+                                          }), p.jsx("p", {
+                                              className: "font-mono text-xs text-foreground/80 mb-1",
+                                              children: "CLABE: 002580905198908514"
+                                          }), p.jsx("p", {
+                                              className: "font-body text-xs text-muted-foreground",
+                                              children: "JESÚS GREGORIO DAVALOS GAVIA"
+                                          })]
+                                      })]
+                                  }), p.jsxs("div", {
+                                      className: "space-y-2",
+                                      children: [p.jsx("p", {
+                                          className: "text-xs text-muted-foreground font-body uppercase tracking-wider",
+                                          children: "Mesa de Regalos Amazon"
+                                      }), p.jsx("a", {
+                                          href: "https://www.amazon.com.mx/wedding/guest-view/3BZD9OR9XY86H",
+                                          target: "_blank",
+                                          rel: "noopener noreferrer",
+                                          className: "font-mono text-sm text-foreground/80 tracking-wide select-all hover:text-foreground underline underline-offset-2 transition-colors block break-all",
+                                          children: "https://www.amazon.com.mx/wedding/guest-view/3BZD9OR9XY86H"
+                                      }), p.jsx("p", {
+                                          className: "text-xs text-muted-foreground font-body italic",
+                                          
+                                      })]
+                                  }), p.jsxs("div", {
+                                      className: "space-y-2",
+                                      children: [p.jsx("p", {
+                                          className: "text-xs text-muted-foreground font-body uppercase tracking-wider",
+                                          children: "MESA DE REGALOS LIVERPOOL"
+                                      }), p.jsx("a", {
+                                          href: t,
+                                          target: "_blank",
+                                          rel: "noopener noreferrer",
+                                          className: "font-mono text-sm text-foreground/80 tracking-wide select-all hover:text-foreground underline underline-offset-2 transition-colors block break-all",
+                                          children: t
+                                      })]
                                   })]
-                              }) : p.jsx("button", {
-                                  onClick: () => i(!0),
-                                  className: "text-sm text-muted-foreground hover:text-foreground underline underline-offset-4 decoration-border hover:decoration-foreground/60 transition-colors font-body",
-                                  children: "Mostrar Mesa Liverpool"
-                              })
+                              })]
                           })]
                       })
                   })
