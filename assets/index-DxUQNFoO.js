@@ -22352,9 +22352,12 @@ function mF({
               },
               className: "bg-card/95 backdrop-blur-sm border border-border p-8 md:p-12 rounded-lg shadow-elegant text-center",
               children: [p.jsx("div", {
-                  className: "w-16 h-16 mx-auto mb-6 rounded-full bg-secondary flex items-center justify-center",
+                  className: "w-16 h-16 mx-auto mb-6 rounded-full bg-primary flex items-center justify-center shadow-soft",
                   children: p.jsx(Hc, {
-                      className: "w-7 h-7 text-primary"
+                      className: "w-7 h-7 [&>path]:fill-white [&>circle]:fill-white",
+                      style: {
+                          color: "white"
+                      }
                   })
               }), p.jsx("h3", {
                   className: "font-display text-2xl text-foreground mb-4",
